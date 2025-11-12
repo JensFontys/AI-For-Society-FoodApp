@@ -1,0 +1,6 @@
+0 Potato
+1 Tomato
+2 Cucumber
+3 Cauliflower
+4 Carrot
+5 Class 6
