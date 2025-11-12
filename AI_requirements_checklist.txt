@@ -1,0 +1,510 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+EVERYTHING I NEED TO BUILD MY AI FOOD WASTE REDUCTION APP
+A Complete Checklist of Tools, APIs, Data, Code, & Knowledge
+═══════════════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 1: COMPUTER SETUP & SOFTWARE INSTALLATION
+═══════════════════════════════════════════════════════════════════════════════
+
+Essential software to install:
+
+□ Python 3.9+ (or newer)
+  - Download from: python.org
+  - Installation time: 10 minutes
+  - Why: Everything runs on Python with Streamlit
+  - Check it works: Open terminal, type "python --version"
+
+□ Streamlit Framework
+  - Install command: pip install streamlit
+  - Installation time: 5 minutes
+  - Why: This is my main app framework (chosen for simplicity)
+  - Check it works: Try "streamlit run" in terminal
+
+□ Additional Python Libraries
+  - pip install pandas (for data handling)
+  - pip install requests (for API calls)
+  - pip install pillow (for image processing)
+  - pip install plotly (for charts)
+  - pip install opencv-python (for image recognition)
+  Installation time: 10 minutes total
+
+□ Code Editor (Choose one)
+  - Option 1: VS Code (recommended for beginners)
+    Download from: code.visualstudio.com
+    Installation time: 5 minutes
+  - Option 2: PyCharm Community Edition
+    Download from: jetbrains.com/pycharm
+    Installation time: 10 minutes
+  - Why: Where I'll write my Python code
+
+□ Git & GitHub (optional but recommended)
+  - Download Git from: git-scm.com
+  - Create free GitHub account: github.com
+  - Why: Version control (save all my iterations)
+  - Installation time: 5 minutes
+
+TOTAL SETUP TIME: ~45 minutes
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 2: AI/ML TOOLS & PLATFORMS (ALREADY EXIST - I JUST USE THEM)
+═══════════════════════════════════════════════════════════════════════════════
+
+□ Google Teachable Machine (No-Code ML Training)
+  - Website: teachablemachine.withgoogle.com
+  - Access: Free, no signup needed initially
+  - What I'll do:
+    1. Create image project
+    2. Add food categories (7-10 types)
+    3. Upload/capture training images
+    4. Train model
+    5. Export model (as TensorFlow)
+  - Time investment: 8-10 hours (mostly data collection)
+  - Output: model.json + weights files
+
+□ Open Food Facts API (Barcode Database)
+  - Website: openfoodfacts.org
+  - Access: Free, no API key needed for basic access
+  - What I'll use: Looking up food info by barcode number
+  - API format: Request a barcode, get back product info
+  - Example: Search barcode "3017624010701" → Returns "Nutella, 400g, Ferrero"
+  - Documentation: openfoodfacts.github.io/openfoodfacts-server/api/
+  - Time investment: 1-2 hours to understand
+
+□ Edamam API (Recipes & Nutrition - Optional)
+  - Website: developer.edamam.com
+  - Access: Free tier available, need API key
+  - What I'll use: Recipe suggestions based on ingredients
+  - Will I use it? Maybe - depends on time
+  - Documentation: Developer.edamam.com
+  - Time investment: 2-3 hours if I implement
+
+□ Kaggle (Training Data Source)
+  - Website: kaggle.com
+  - Access: Free, need free account
+  - What I'll use: Download food image datasets
+  - Why: Gives me thousands of food images to learn from
+  - Time investment: 2-3 hours to download and organize
+
+TOTAL SETUP TIME: ~30 minutes (mostly just creating accounts)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 3: DATA I NEED TO COLLECT
+═══════════════════════════════════════════════════════════════════════════════
+
+For My Image Recognition Model (MUST HAVE):
+
+□ Food Images: ~1,000-1,500 images total (100-150 per category)
+
+  Categories I'm targeting:
+  1. Apples (red, green, different sizes)
+  2. Bananas (yellow, brown, bunches)
+  3. Bread (white, brown, sliced)
+  4. Milk (bottles, cartons)
+  5. Tomatoes (red, on vine, loose)
+  6. Carrots (loose, bunches)
+  7. Lettuce (heads, bags)
+
+  Optional (if I have time):
+  8. Cheese (blocks, sliced, wheels)
+  9. Eggs (cartons, loose)
+  10. Yogurt (containers)
+
+  Where to get images:
+  - MY OWN PHONE: Take photos of real food at home (best for variety)
+  - GOOGLE IMAGES: Download licensed images (search "apples" + filter)
+  - KAGGLE DATASETS: Download existing food datasets (save time)
+  - ONLINE SOURCES: CitationNeeded... (check license!)
+
+  Quality requirements:
+  ✓ Different angles (top-down, side view, close-up)
+  ✓ Different lighting (natural light, indoor light, bright, dim)
+  ✓ Different backgrounds (white surface, wooden table, fridge, etc.)
+  ✓ Different sizes (small, medium, large for each item)
+
+  Time to collect: 6-8 hours (about 1 hour per category)
+
+
+For User Research (MUST HAVE):
+
+□ Interview Subjects: 5-8 people
+  - What I'll ask: "How much food do you waste?" "What's frustrating about tracking food?"
+  - Interview time: 15-30 minutes per person
+  - Total time: 2-3 hours
+  - Locations: Friends, family, housemates
+
+□ User Testing Participants: 5-8 people (same or different from interview subjects)
+  - What I'll do: Show them my app, watch them use it
+  - Testing time: 15-20 minutes per person
+  - Total time: 2-3 hours
+  - Locations: Anywhere they can use laptop/phone
+
+
+For Model Validation (MUST HAVE):
+
+□ Test Images: 50-100 additional images (10 per category)
+  - These images will NOT be in my training data
+  - I'll use them to test: "Does my model recognize NEW food?"
+  - Source: Can take myself or use separate images from Internet
+  - Time: 1-2 hours
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 4: CODE & CODE TEMPLATES I'LL NEED
+═══════════════════════════════════════════════════════════════════════════════
+
+□ Basic Streamlit App Template
+  - What it includes: Page setup, basic input, output display
+  - Where I'll get it: Provided templates OR streamlit.io/docs
+  - Time to learn: 1-2 hours
+
+□ Barcode Scanner Integration Code
+  - What it does: Takes barcode → calls Open Food Facts API → returns product info
+  - Where I'll get it: Provided templates OR copy from GitHub examples
+  - Time to implement: 2-3 hours (mostly testing)
+
+□ Image Recognition Integration Code
+  - What it does: Takes image → feeds to my Teachable Machine model → returns prediction
+  - Where I'll get it: Teachable Machine export + provided templates
+  - Time to implement: 3-4 hours (including debugging)
+
+□ Data Storage Code (Simple Version)
+  - What it does: Save food items to a list/database
+  - Storage type: For MVP, just Python lists/dictionaries (not real database)
+  - Time to implement: 2-3 hours
+
+□ Recipe Suggestion Algorithm
+  - What it does: User has [apples, milk, flour] → suggests recipes with these
+  - Complexity: Start simple (just matching keywords)
+  - Time to implement: 2-3 hours
+
+□ Visualization Code
+  - What it uses: Plotly for charts
+  - Charts I need: Line chart, pie chart, bar chart
+  - Time to implement: 2-3 hours
+
+□ Environmental Impact Calculator Code
+  - What it calculates: kg waste → CO2 emissions, water usage, money saved
+  - Formulas needed: 1kg food waste ≈ 2kg CO2, €0.80 value, 1,000L water
+  - Time to implement: 1-2 hours
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 5: KNOWLEDGE & SKILLS I NEED TO LEARN
+═══════════════════════════════════════════════════════════════════════════════
+
+Priority 1 (MUST LEARN):
+
+□ Python Basics (if I don't know already)
+  - Variables, lists, dictionaries
+  - Functions and loops
+  - File handling
+  - Learning time: 4-6 hours
+  - Resources: Codecademy, FreeCodeCamp on YouTube
+
+□ Streamlit Framework Basics
+  - Creating pages and layouts
+  - Input widgets (text boxes, buttons, image upload)
+  - Displaying data
+  - Learning time: 3-4 hours
+  - Resources: streamlit.io/docs, "Streamlit in 6 Minutes" YouTube
+
+□ How APIs Work
+  - What an API is (basically "a way to ask a program for data")
+  - How to make API requests in Python (requests library)
+  - Understanding JSON responses
+  - Learning time: 2-3 hours
+  - Resources: Real Python tutorials, YouTube
+
+□ How Machine Learning Models Work (Conceptual)
+  - What training is ("showing the model many examples")
+  - What accuracy means ("percentage of correct predictions")
+  - Overfitting vs underfitting (when model memorizes vs generalizes)
+  - Learning time: 2-3 hours
+  - Resources: Fast.ai, 3Blue1Brown YouTube videos
+
+
+Priority 2 (SHOULD LEARN):
+
+□ Image Processing Basics
+  - Loading images with Python (PIL/pillow)
+  - Resizing images
+  - Understanding image formats
+  - Learning time: 2-3 hours
+
+□ Data Visualization Best Practices
+  - What chart type for what data
+  - Color theory (don't hurt people's eyes!)
+  - Accessibility (color-blind friendly)
+  - Learning time: 2-3 hours
+
+□ Introduction to Version Control (Git)
+  - Why: So I can save all my iterations
+  - Learning time: 2-3 hours
+
+
+Priority 3 (NICE TO HAVE):
+
+□ Introduction to Databases
+  - What databases are
+  - Why they're better than lists
+  - Won't need this for MVP (skip for now)
+
+□ Web Deployment
+  - How to host my app online (Heroku, Streamlit Cloud)
+  - Won't need this for MVP (skip for now)
+
+
+TOTAL LEARNING TIME: ~25-30 hours spread across 12 weeks
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 6: EXTERNAL RESOURCES I'LL RELY ON
+═══════════════════════════════════════════════════════════════════════════════
+
+Documentation:
+
+□ Streamlit Official Documentation
+  - URL: docs.streamlit.io
+  - What I'll use: API reference, tutorials, examples
+
+□ Open Food Facts API Documentation  
+  - URL: openfoodfacts.github.io/openfoodfacts-server/api/
+  - What I'll use: How to format requests, understanding responses
+
+□ Teachable Machine Documentation
+  - URL: teachablemachine.withgoogle.com/train (has tutorial)
+  - What I'll use: Step-by-step guide to training
+
+□ Python Official Documentation
+  - URL: python.org/docs
+  - What I'll use: When I get stuck on Python syntax
+
+
+Learning Platforms:
+
+□ YouTube Channels for Tutorials
+  - Streamlit tutorials
+  - Python for beginners
+  - Machine Learning basics
+  - Estimated: 10-15 hours of videos I might watch
+
+□ Online Communities
+  - Stack Overflow: When I'm stuck on coding problems
+  - Reddit: r/learnpython, r/MachineLearning
+  - Streamlit Community Forum: discuss.streamlit.io
+
+□ ChatGPT or Claude
+  - What I'll use: Help debugging code, explaining concepts
+  - Budget: Free or paid tier
+
+
+Food Waste & Sustainability Research:
+
+□ Academic Papers
+  - FAO Food Waste Report
+  - Too Good To Go Impact Reports
+  - Scientific articles on food waste management
+  - Time to read: 4-6 hours
+
+□ Statistics Sources
+  - UN FAO Statistics (fao.org)
+  - Eurostat
+  - Dutch government reports (rijksoverheid.nl)
+  - Local waste management data
+  - Time to compile: 2-3 hours
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 7: EQUIPMENT & HARDWARE I NEED
+═══════════════════════════════════════════════════════════════════════════════
+
+Essential:
+
+□ Computer with Python installed
+  - Minimum specs: 4GB RAM, 2GB storage for project
+  - Works on: Windows, Mac, Linux
+
+□ Internet connection
+  - Why: Download libraries, access APIs, watch tutorials
+  - Required bandwidth: Minimal (1-5 MB typical)
+
+□ Phone or camera
+  - Why: Take photos of food for my training data
+  - Phone camera is fine! (anything 8MP or better)
+
+
+Optional:
+
+□ Second monitor (nice to have)
+  - Why: Keep code editor open while viewing Streamlit output
+  - Not required, just convenient
+
+□ Lighting for photography
+  - Why: Better food photos = better training data
+  - DIY: Use natural window light, or household lamps
+  - Cost: €0 (use what you have)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 8: ACCESSIBILITY & PERMISSIONS I NEED
+═══════════════════════════════════════════════════════════════════════════════
+
+□ Informed Consent from Test Users
+  - What I need: Written permission to use their feedback
+  - When: Before or during user testing
+  - Document: Simple form they sign
+
+□ Image Licenses & Attribution
+  - What I need: Make sure I have rights to use images
+  - Rules: Follow Creative Commons if downloading
+  - What I'll do: Credit sources where required
+
+□ Data Privacy Considerations
+  - What I need: Make sure I'm not storing personal data inappropriately
+  - For MVP: Just storing food items (not sensitive)
+  - Practice: Don't save identifiable info about users
+
+□ University/School Approval (If Required)
+  - What I need: Check if project needs ethics approval
+  - When: Before user interviews start
+  - Who to ask: My teacher or supervisor
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 9: QUICK REFERENCE - SETUP CHECKLIST FOR WEEK 1
+═══════════════════════════════════════════════════════════════════════════════
+
+Before I start Week 5 (Machine Teaching), I need:
+
+□ Python installed and verified (python --version works)
+□ Streamlit installed (pip install streamlit successful)
+□ Code editor set up and tested
+□ GitHub account created (optional but recommended)
+□ Teachable Machine account/browser access ready
+□ Folder structure created on my computer
+□ Evidence organization system set up
+
+TOTAL TIME: 1-2 hours one-time setup
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 10: BUDGET BREAKDOWN
+═══════════════════════════════════════════════════════════════════════════════
+
+Everything free or already included:
+
+✓ Python - FREE
+✓ Streamlit - FREE
+✓ Teachable Machine - FREE
+✓ Open Food Facts API - FREE
+✓ Kaggle - FREE
+✓ VS Code - FREE
+✓ GitHub - FREE
+✓ Most tutorials - FREE on YouTube
+
+Optional paid services (not required):
+
+≈ ChatGPT Plus - €20/month (optional, free version works fine)
+≈ Edamam Recipe API premium - €30-50/month (optional, free tier sufficient)
+
+TOTAL PROJECT COST: €0 (everything free!)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 11: FINAL CHECKLIST - DO I HAVE EVERYTHING?
+═══════════════════════════════════════════════════════════════════════════════
+
+Before I start building (end of Week 4), I need:
+
+SOFTWARE:
+✓ Python 3.9+ installed
+✓ Streamlit installed
+✓ Required libraries installed (pandas, requests, pillow, plotly, opencv)
+✓ Code editor chosen and set up
+✓ Git installed (optional but recommended)
+
+ACCOUNTS & ACCESS:
+✓ Teachable Machine access (in browser)
+✓ GitHub account (optional)
+✓ Kaggle account for datasets
+
+KNOWLEDGE:
+✓ Python basics reviewed (1-2 hour refresh)
+✓ Streamlit tutorial watched (1 hour)
+✓ API concept understood (30 min)
+
+DATA:
+✓ Folder structure created
+✓ Evidence organization system set up
+✓ 5-8 potential test users identified
+✓ Potential interview subjects lined up
+
+CODE TEMPLATES:
+✓ Basic Streamlit template ready
+✓ Barcode scanner template ready (or know where to find)
+✓ Image recognition template ready (or know where to find)
+
+RESOURCES:
+✓ Bookmarked all documentation URLs
+✓ Downloaded key papers/articles
+✓ Identified YouTube tutorials to watch
+
+If all above are checked: I'm ready to build!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 12: HELP! WHERE TO FIND ANSWERS
+═══════════════════════════════════════════════════════════════════════════════
+
+When I get stuck:
+
+ERROR IN MY PYTHON CODE:
+1. First: Google the exact error message
+2. Then: Check Stack Overflow
+3. Then: Ask ChatGPT
+4. Then: Ask in Streamlit Community Forum
+5. Last: Ask my teacher/supervisor
+
+STREAMLIT NOT WORKING:
+1. First: Check official docs at docs.streamlit.io
+2. Then: Watch "Streamlit in 6 Minutes" on YouTube
+3. Then: Post in Streamlit Community Forum
+
+API NOT RESPONDING:
+1. First: Check if internet connection works
+2. Then: Verify URL/parameters are correct
+3. Then: Check API documentation
+4. Then: Test with simple request first
+
+MODEL NOT ACCURATE ENOUGH:
+1. First: Check if I have enough training data (100+ images per category)
+2. Then: Verify data diversity (different angles, lighting)
+3. Then: Try collecting more images of weak categories
+4. Then: Retrain model
+5. Remember: 70-80% is acceptable for MVP!
+
+USER TESTING FEEDBACK DOESN'T MAKE SENSE:
+1. First: Re-read their comments carefully
+2. Then: Watch video recording of them using app
+3. Then: Ask clarifying questions
+4. Then: Document exactly what was confusing
+
+RUNNING OUT OF TIME:
+1. First: Cut features ruthlessly (focus on 1 working feature)
+2. Then: Reduce scope (fewer food categories, simpler visualization)
+3. Then: Prioritize documentation over perfection
+4. Remember: Process evidence > Perfect product
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+That's everything! Print this out or bookmark it. This is my complete checklist
+of what I need to build an AI food waste app.
+
+No need to panic about "not knowing enough." Everything I need is free, documented,
+and learnable. I've got this. 🚀
+

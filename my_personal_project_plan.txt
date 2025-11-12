@@ -1,0 +1,433 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+MY AI FOOD WASTE REDUCTION APP PROJECT - PERSONAL ROADMAP
+Written by me, for me - A student's journey through AI development
+═══════════════════════════════════════════════════════════════════════════════
+
+## WHO AM I & WHAT AM I DOING?
+
+My name is [Your Name], and I'm a student studying Applied Natural Sciences with a 
+Minor in AI for Society. I love tech, game development, and solving real-world problems.
+
+This document is my personal project roadmap for the next 12 weeks. I'm going to build 
+a smart kitchen assistant app that uses AI to help people reduce food waste. 
+
+Why this project? Because:
+- Food waste is a real problem (over 200 million tons per year globally)
+- AI can actually solve it in a practical way
+- I get to learn AI, build a cool app, AND help society at the same time
+- It fits perfectly with my minor and my tech interests
+
+Let me be honest: I'm not a Python expert, and I've never trained a machine learning 
+model before. But I AM good at problem-solving (thanks, game dev!), and I'm comfortable 
+learning new tech. This project will change that.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+WHAT AM I BUILDING? (In Plain English)
+═══════════════════════════════════════════════════════════════════════════════
+
+Imagine this: You come home from grocery shopping. You want to know:
+- "What do I have in my fridge?" 
+- "When does it expire?"
+- "What can I cook with these ingredients?"
+- "How much food am I wasting anyway?"
+
+My app does ALL of this. Here's how:
+
+1. **Barcode Scanner:** You scan a barcode → app looks it up → tells you what it is
+2. **Image Recognition:** You take a photo of your fridge → app recognizes the food
+3. **Expiration Tracking:** You tell it when things expire → app reminds you when food is about to spoil
+4. **Recipe Suggestions:** You see what you have → app suggests recipes you can make
+5. **Impact Dashboard:** You see stats like "You've saved €25 and 4kg of CO2 this month"
+
+And the best part? The app learns what you waste most, and helps you do better.
+
+That's the VISION. But I need to be realistic about what I can actually build in 12 weeks 
+as one person without being a Python expert.
+
+So here's my actual plan:
+
+
+═══════════════════════════════════════════════════════════════════════════════
+MY 12-WEEK PLAN: SCALED TO BE REALISTIC
+═══════════════════════════════════════════════════════════════════════════════
+
+I'm using the MoSCoW method to prioritize. That means:
+- MUST HAVE: Features I absolutely need for MVP
+- SHOULD HAVE: Features that would be really cool
+- COULD HAVE: Nice-to-haves if I have time
+- WON'T HAVE: Features I'm cutting from this project
+
+
+WEEK 1-2: RESEARCH & UNDERSTANDING THE PROBLEM
+═════════════════════════════════════════════════
+
+What I'm doing:
+  □ Reading about food waste (statistics, research papers, articles)
+  □ Interviewing people about how they waste food
+  □ Looking at existing apps to see what works/doesn't work
+  □ Meeting my stakeholders (the people who care about this problem)
+
+Why this matters:
+  I need to understand the problem deeply before I try to solve it. This isn't just 
+  tech for tech's sake - it's tech FOR SOCIETY. I need to prove that my solution 
+  actually solves a real problem.
+
+Deliverables by end of Week 2:
+  ✓ Written problem statement (what IS the food waste problem exactly?)
+  ✓ 3-4 user persona cards (types of people who will use my app)
+  ✓ Analysis of 5 existing apps (what did they get right/wrong?)
+  ✓ Interview notes from 5 people
+  ✓ List of statistics and sources I'll use
+
+Time estimate: 10-12 hours per week = 20-24 hours total
+
+
+WEEK 3-4: DESIGN & DECIDING MY TECH STACK
+═════════════════════════════════════════════
+
+What I'm doing:
+  □ Drawing paper prototypes (sketches of what my app looks like)
+  □ Deciding which features are MUST HAVE vs SHOULD HAVE
+  □ Testing different tools to build the app (Streamlit vs MIT App Inventor vs Glide)
+  □ Creating a comparison matrix: "Why should I use THIS tool?"
+
+Why this matters:
+  I'm making a deliberate choice about my technology stack. This is CRUCIAL because 
+  choosing the wrong tool could waste weeks of my time. I need to test first, 
+  decide second.
+
+My technology choice:
+  I'm going with STREAMLIT because:
+  - It's Python-based but simple (like Unreal Blueprints in structure)
+  - I can build a web app without knowing advanced web development
+  - It looks professional without me having to design HTML/CSS
+  - There are tons of tutorials available
+  - I can prototype FAST
+
+  Alternative: MIT App Inventor (because of my Blueprint experience)
+  Alternative: Glide (if I want the fastest prototype)
+
+Deliverables by end of Week 4:
+  ✓ Paper prototype sketches (photographed)
+  ✓ MoSCoW prioritization matrix (MUST vs SHOULD vs COULD vs WON'T)
+  ✓ Technology comparison document (3 tools compared)
+  ✓ Decision: "I chose Streamlit because..."
+  ✓ Learning plan: How I'll learn Streamlit
+
+Time estimate: 10-12 hours per week = 20-24 hours total
+
+
+WEEK 5-6: TRAINING MY AI MODEL - THE MACHINE TEACHING
+═════════════════════════════════════════════════════════
+
+What I'm doing:
+  □ Taking hundreds of photos of food (apples, bananas, bread, milk, tomatoes, etc.)
+  □ Uploading them to Google's Teachable Machine
+  □ Telling Teachable Machine: "This is an apple, this is a banana, this is milk"
+  □ Having it train a model: "Learn to recognize these foods"
+  □ Testing the model: "Does it correctly identify a NEW apple I show it?"
+  □ Improving it: "Where does it fail? Can I fix it?"
+
+Why this matters:
+  This is the heart of my AI project. I'm literally TEACHING a machine. This is 
+  machine learning! And Teachable Machine makes it simple - no PhD in ML required.
+
+What I'm building:
+  - A model that recognizes 7-10 food types
+  - Goal: 80% accuracy (meaning 8 out of 10 times, it gets it right)
+  - Will identify: Apples, Bananas, Bread, Milk, Tomatoes, Carrots, Lettuce
+  - Optional: Cheese, Eggs, Yogurt (if I have time)
+
+Data I need to collect:
+  - 100+ photos per food category
+  - Different angles, lighting, backgrounds
+  - Mix of store-bought and homemade looking items
+  - I can use my phone camera + images from Google Images
+
+Deliverables by end of Week 6:
+  ✓ Trained image recognition model (downloaded from Teachable Machine)
+  ✓ Dataset documentation: "I collected X photos of Y category"
+  ✓ Accuracy report: "My model is 78% accurate on unseen images"
+  ✓ Confusion matrix: "When does it fail? (e.g., confuses apples with tomatoes)"
+  ✓ Screenshots of the training process
+
+Time estimate: 10-12 hours per week = 20-24 hours total
+
+
+WEEK 7-9: BUILDING THE ACTUAL APP
+═════════════════════════════════════
+
+What I'm doing:
+  □ Setting up Streamlit
+  □ Creating a basic food inventory tracker (add food items)
+  □ Integrating barcode scanning (using Open Food Facts API)
+  □ Integrating my trained AI model (the one I built in Week 5-6)
+  □ Adding simple recipe suggestions
+  □ Adding expiration date tracking and alerts
+  □ Making it look decent (not fancy, just clean)
+
+Why this matters:
+  This is where the rubber meets the road. All my planning and research comes together 
+  into an actual working app. I'm going to actually BUILD something.
+
+How I'll approach this (no panic!):
+  Week 7: Get basic input working (just manual entry, no AI yet)
+  Week 8: Integrate barcode scanner + start on image recognition
+  Week 9: Polish everything, fix bugs, add nice UI
+
+Code template I'll use:
+  I have template code provided that I can adapt:
+  - Simple Streamlit app structure
+  - Barcode scanner code (Open Food Facts API)
+  - Image recognition integration (my Teachable Machine model)
+  - Basic visualization
+
+Deliverables by end of Week 9:
+  ✓ Working MVP (minimum viable product)
+  ✓ Can add food by barcode (works for at least 10 products)
+  ✓ Can add food by image (my AI recognizes it)
+  ✓ Can add food manually
+  ✓ Can set expiration dates
+  ✓ Gets simple alerts ("Your milk expires in 2 days")
+  ✓ Tested by at least 3 people who gave feedback
+
+Time estimate: 12-15 hours per week = 40-45 hours total
+
+
+WEEK 10: DATA VISUALIZATION - MAKING IMPACT VISIBLE
+═══════════════════════════════════════════════════════
+
+What I'm doing:
+  □ Creating a dashboard with charts
+  □ Showing food waste over time (line chart)
+  □ Showing which foods are wasted most (bar chart)
+  □ Calculating environmental impact (CO2, water, money saved)
+  □ Making it look clean and understandable
+
+Why this matters:
+  Numbers mean nothing without context. A chart that shows "I've prevented 4kg of 
+  food waste this month" is much more powerful than just saying "4kg". This is where 
+  my app becomes MOTIVATING for users.
+
+What my calculator will show:
+  - "You've saved 25 euros this month"
+  - "You've prevented 3.2 kg of CO2 emissions"
+  - "You've saved 15,000 liters of water"
+  - "Most wasted item: Bread (47%)"
+
+Deliverables by end of Week 10:
+  ✓ Dashboard integrated into app
+  ✓ At least 4 different visualizations
+  ✓ Environmental calculator working
+  ✓ Tested with 3-5 people: "Does this make sense?"
+
+Time estimate: 12-15 hours per week
+
+
+WEEK 11: REAL USER TESTING
+═══════════════════════════════════
+
+What I'm doing:
+  □ Asking 5-8 people to use my app
+  □ Watching them use it (not helping, just observing)
+  □ Taking notes on what's confusing
+  □ Asking them: "What would make this better?"
+  □ Collecting feedback forms
+  □ Recording their screen/reactions (with permission)
+  □ Identifying and fixing critical bugs
+
+Why this matters:
+  I can't just assume my app is good. Real users will find things I never thought of. 
+  And this testing data becomes EVIDENCE for my project. Teachers want to see: 
+  "Did real people actually test this? What did they say?"
+
+Deliverables by end of Week 11:
+  ✓ User testing notes from 5-8 people
+  ✓ Video recordings of testing sessions (if allowed)
+  ✓ Feedback forms completed
+  ✓ Bug list with fixes applied
+  ✓ "Changes made based on feedback" document
+
+Time estimate: 12-15 hours
+
+
+WEEK 12: DOCUMENTATION & PRESENTATION
+═══════════════════════════════════════
+
+What I'm doing:
+  □ Writing my final project report (15-20 pages)
+  □ Creating a presentation (15-20 slides)
+  □ Recording a demo video (3-5 minutes)
+  □ Organizing all my evidence
+  □ Writing personal reflections
+
+Why this matters:
+  The app is just one part of the grade. EVIDENCE and DOCUMENTATION are huge. 
+  Teachers want to see that I understand what I did, why I did it, what I learned, 
+  and what it means. This is where I prove the VALUE of my work.
+
+What my final report will cover:
+  - Introduction: Why food waste matters
+  - Problem analysis: What I discovered in my research
+  - Solution design: How I decided to build the app
+  - Technical implementation: How I built it
+  - Results: Does it work? What did users say?
+  - Impact: How much food waste can this prevent?
+  - Reflection: What did I learn? What would I do differently?
+  - Future work: Where could this go?
+
+Deliverables by end of Week 12:
+  ✓ Final project report (15-20 pages, well-formatted)
+  ✓ Presentation slides (ready to present)
+  ✓ Demo video (showing app in action)
+  ✓ All evidence organized in folders
+  ✓ Personal reflection essay
+
+Time estimate: 15-18 hours
+
+
+═══════════════════════════════════════════════════════════════════════════════
+HOW I'LL TRACK MY PROGRESS & EVIDENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+I'm setting up a folder structure on my computer:
+
+AI_Food_Waste_Project/
+├── 01_Societal_Impact/
+│   ├── research_papers/
+│   ├── statistics.pdf
+│   └── user_interviews/
+├── 02_Investigative_Problem_Solving/
+│   ├── competitor_analysis.xlsx
+│   ├── technology_comparison.pdf
+│   └── challenge_logs/
+├── 03_Data_Preparation/
+│   ├── food_images/
+│   ├── dataset_documentation.txt
+│   └── data_quality_report.pdf
+├── 04_Machine_Teaching/
+│   ├── teachable_machine_screenshots/
+│   ├── model_v1/ (first trained model)
+│   ├── model_v2/ (improved model)
+│   └── performance_reports/
+├── 05_Data_Visualization/
+│   ├── dashboard_designs/
+│   └── chart_examples/
+├── 06_Reporting/
+│   ├── weekly_reports/
+│   └── final_report_drafts/
+├── 07_Personal_Leadership/
+│   ├── weekly_reflections/
+│   └── skills_tracking/
+├── 08_Personal_Goal/
+│   ├── initial_goals.txt
+│   └── achievement_evidence/
+└── Evidence_Index.xlsx
+
+Weekly ritual (every Friday, 30 minutes):
+  1. Screenshot my progress
+  2. Write one paragraph reflection: "This week I learned..."
+  3. Document any challenges and how I solved them
+  4. Update my Evidence Index spreadsheet
+  5. Back everything up to the cloud
+
+
+═══════════════════════════════════════════════════════════════════════════════
+WHAT SUCCESS LOOKS LIKE FOR ME
+═══════════════════════════════════════════════════════════════════════════════
+
+Honest version:
+  ✓ My app actually works (barcode scanning works, image recognition works, no crashes)
+  ✓ Real people test it and say "This is useful" or "I'd use this"
+  ✓ I can explain WHY every technical choice I made
+  ✓ I learned something genuinely new about AI
+  ✓ I have strong evidence for all 8 assessment criteria
+  ✓ I can point to specific moments where I overcame challenges
+
+NOT necessary for success:
+  ✗ A perfect, polished app
+  ✗ 100% model accuracy
+  ✗ Millions of features
+  ✗ A commercial-looking product
+
+The truth: Process > Product. Teachers want to see my journey, my learning, 
+my problem-solving. A simple app with excellent documentation beats a 
+complex app with no evidence every single time.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+WHAT COULD GO WRONG (& MY BACKUP PLANS)
+═══════════════════════════════════════════════════════════════════════════════
+
+Scenario 1: "It's Week 8 and I'm behind on development"
+  → PLAN: Cut features ruthlessly. Focus on barcode scanning OR image recognition,
+     not both. Spend saved time on documentation. Document WHY I cut features
+     (this becomes evidence of investigative problem solving!)
+
+Scenario 2: "My image recognition model is only 60% accurate"
+  → PLAN: That's actually fine. Document it honestly. Analyze WHY it fails.
+     Explain what I'd do differently. The learning journey matters more than
+     the final accuracy.
+
+Scenario 3: "I don't understand how to code the API integration"
+  → PLAN: Use the code templates provided. Copy-paste and adapt. Watch tutorials.
+     Ask ChatGPT. Ask friends. DOCUMENT my learning (becomes personal leadership
+     evidence). If all fails, offer manual barcode entry as backup.
+
+Scenario 4: "It's Week 11 and I haven't organized ANY evidence"
+  → PLAN: Stop development. Spend 2-3 days organizing everything I've done.
+     Better late than never. Be honest in reflections about late documentation.
+
+Scenario 5: "No one wants to test my app"
+  → PLAN: Ask differently. Not "Will you test my app?" but "I'm building this
+     app - can you spend 10 minutes trying it and telling me what's confusing?"
+     Offer coffee/snacks. Make it easy (10 min max).
+
+
+═══════════════════════════════════════════════════════════════════════════════
+MY PERSONAL LEARNING GOALS (Why I'm doing this)
+═══════════════════════════════════════════════════════════════════════════════
+
+At the end of this project, I want to be able to say:
+
+  "I understand how machine learning works - not just theoretically, but practically.
+   I've trained a model, seen it fail, improved it. I GET IT now."
+
+  "I can build an AI application from scratch. I know the tools available.
+   I can choose the right tool for the job."
+
+  "I've proven that AI can solve real-world problems. I'm not just playing with
+   tech for tech's sake - I understand societal impact."
+
+  "I'm a better problem-solver. I've faced challenges I'd never seen before
+   and figured them out."
+
+  "I know how to document my work and show the value of what I've done.
+   This will help me in future projects, job interviews, etc."
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ONE FINAL NOTE TO MYSELF
+═══════════════════════════════════════════════════════════════════════════════
+
+This is going to be hard. There will be moments where I think "I can't do this,
+I don't know enough Python" or "Nothing is working, why is the API not responding?"
+or "I'm running out of time."
+
+But here's what I know about myself:
+- I've learned Unreal Engine 5 (that was hard too!)
+- I solve problems daily in game development
+- I LOVE tech and learning new things
+- I'm good at research and understanding complex problems
+- I'm creative and can find alternative solutions when Plan A doesn't work
+
+This project is hard, but it's NOT impossible. And 12 weeks from now, I'm going
+to have a working AI app, mountains of evidence, and a portfolio piece that shows
+I understand AI for society.
+
+Let's do this. 🚀
+
+First step: Tomorrow, I'm going to spend 1 hour reading about food waste.
+

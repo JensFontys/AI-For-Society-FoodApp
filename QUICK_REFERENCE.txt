@@ -1,0 +1,260 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+QUICK START REFERENCE CARD
+Everything You Need in One Place (Print This!)
+═══════════════════════════════════════════════════════════════════════════════
+
+YOUR PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Project: AI Food Waste Reduction App
+Duration: 12 weeks
+Time per week: 10-15 hours
+Total effort: ~160 hours
+Technology: Streamlit (Python web app)
+AI Tool: Google Teachable Machine (no-code)
+
+YOUR 12-WEEK ROADMAP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Week 1-2:   Research & Problem Understanding
+Week 3-4:   Design & Technology Selection  
+Week 5-6:   Train AI Model (Teachable Machine)
+Week 7-9:   Build App (Streamlit + API Integration)
+Week 10:    Data Visualization & Dashboard
+Week 11:    User Testing & Feedback
+Week 12:    Documentation & Presentation
+
+WHAT YOU'RE BUILDING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MVP Features:
+✓ Barcode scanner (recognizes 10+ products)
+✓ Image recognition (identifies 7-10 food types)
+✓ Manual food input with expiration dates
+✓ Simple recipe suggestions
+✓ Food waste dashboard with environmental impact
+✓ User-friendly alerts for expiring items
+
+NOT building in MVP (save for later):
+✗ Advanced spoilage detection
+✗ Social features
+✗ Cloud database
+✗ Mobile app (web-based only)
+
+CORE TECHNOLOGIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+App Framework:
+  → Streamlit (web app framework) - FREE
+    Install: pip install streamlit
+
+Image Recognition:
+  → Google Teachable Machine - FREE, no-code
+    URL: teachablemachine.withgoogle.com
+
+Barcode Database:
+  → Open Food Facts API - FREE
+    URL: openfoodfacts.org/api
+
+Code Editor:
+  → VS Code or PyCharm - FREE
+    Download: code.visualstudio.com
+
+Visualization:
+  → Plotly (Python library) - FREE
+    Install: pip install plotly
+
+DATA YOU NEED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Training Images: 1,000-1,500 total
+  → ~150 images per food category
+  → 7-10 food categories
+  → Multiple angles, lighting, backgrounds
+  → Collect from: Your phone, Google Images, Kaggle
+
+Food Categories:
+  1. Apples
+  2. Bananas  
+  3. Bread
+  4. Milk
+  5. Tomatoes
+  6. Carrots
+  7. Lettuce
+  (+ optional: Cheese, Eggs, Yogurt)
+
+Test Users: 5-8 people
+  → For user interviews (Week 2)
+  → For app testing (Week 11)
+
+INSTALLATION CHECKLIST (Week 1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Python 3.9+ (python.org)
+□ Streamlit (pip install streamlit)
+□ Libraries (pandas, requests, pillow, plotly, opencv-python)
+□ Code editor (VS Code recommended)
+□ Git (git-scm.com) - optional
+□ Teachable Machine access (just visit website)
+□ GitHub account - optional
+□ Project folder structure created
+
+EVIDENCE YOU NEED (For Assessment)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create folders for each category:
+
+1. Societal Impact
+   → Statistics, research papers, interview notes
+   → Environmental calculations
+   → UN SDG alignment
+
+2. Investigative Problem Solving  
+   → Technology comparisons
+   → Challenge logs
+   → Decision rationale documents
+
+3. Data Preparation
+   → Dataset documentation
+   → Data quality reports
+   → Bias analysis
+
+4. Machine Teaching
+   → Teachable Machine screenshots
+   → Model performance reports
+   → Training iterations (V1, V2, V3)
+
+5. Data Visualization
+   → Dashboard designs
+   → Chart justifications
+   → User testing feedback
+
+6. Reporting
+   → Weekly progress reports
+   → Final project report
+   → Presentation materials
+
+7. Personal Leadership
+   → Weekly reflection journal
+   → Challenge narratives
+   → Skills assessments
+
+8. Personal Goal
+   → Initial goals statement
+   → Goal achievement evidence
+   → Reflection essay
+
+KEY LEARNING RESOURCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Streamlit:
+  → streamlit.io/docs (official docs)
+  → "Streamlit in 6 Minutes" (YouTube)
+  → Learning time: 2-3 hours
+
+Teachable Machine:
+  → teachablemachine.withgoogle.com (has tutorial)
+  → "Teachable Machine Food Recognition" (YouTube)
+  → Learning time: 1-2 hours
+
+Python Basics (if needed):
+  → "Python for Beginners" (FreeCodeCamp, YouTube)
+  → Codecademy Python Course
+  → Learning time: 4-6 hours
+
+APIs:
+  → "How APIs Work" (YouTube)
+  → Real Python tutorials
+  → Learning time: 2-3 hours
+
+Open Food Facts API:
+  → openfoodfacts.github.io/openfoodfacts-server/api/
+  → Learning time: 1-2 hours
+
+EMERGENCY BACKUP PLANS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+If model accuracy is low (60%):
+  → That's okay! Document it honestly.
+  → Analyze why it fails (confusion matrix).
+  → Explain how you'd improve it.
+  → Process matters more than accuracy.
+
+If you're running out of time:
+  → Cut features ruthlessly.
+  → Focus on 1 working AI feature (barcode OR image, not both).
+  → Simplify dashboard (2-3 charts instead of 5).
+  → More time for documentation.
+
+If nobody tests your app:
+  → Ask more directly and personally.
+  → Offer to demonstrate it to them first.
+  → Make it easy (10 minutes max).
+  → Record yourself using it (self-testing counts as evidence).
+
+If you don't understand the code:
+  → Use provided templates (copy-paste is okay).
+  → Watch tutorials for that specific topic.
+  → Ask ChatGPT to explain the code.
+  → Document your learning process (becomes evidence!).
+
+WEEKLY RITUAL (30 minutes every Friday)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Take screenshot of your progress
+2. Write 1-paragraph reflection: "This week I learned..."
+3. Document challenges you overcame
+4. Save all new code/files
+5. Update your Evidence Index spreadsheet
+6. Back everything up to cloud (Google Drive/OneDrive)
+
+SUCCESS METRICS (You did good if...)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Barcode scanning works for 10+ products
+✓ Image recognition works with 70%+ accuracy  
+✓ App runs without crashes
+✓ 5-8 people can use it without help
+✓ Dashboard shows meaningful insights
+✓ You can explain every technical choice
+✓ You have strong evidence for all 8 criteria
+✓ You learned something genuinely new about AI
+
+COST BREAKDOWN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Software: €0 (everything free)
+Resources: €0 (all tutorials free)
+Tools: €0 (all platforms free)
+Equipment: €0 (use what you have)
+
+TOTAL: €0 ✓
+
+When you're stuck, ask yourself:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Have I Google'd the error? (90% of problems are solved this way)
+2. Have I watched a YouTube tutorial on this topic?
+3. Have I checked the official documentation?
+4. Have I asked ChatGPT?
+5. Have I asked a friend or teacher?
+
+If you go through all 5, ANY answer you find is valid.
+Then DOCUMENT how you solved it (that's evidence!).
+
+YOUR NEXT STEPS (TOMORROW)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Spend 1 hour reading about food waste
+□ Spend 1 hour organizing your project folder
+□ Create an Evidence Index spreadsheet
+□ Set up weekly calendar reminders
+
+That's it. You're starting tomorrow.
+
+═══════════════════════════════════════════════════════════════════════════════
+This is your cheat sheet. Keep it handy. Reference it constantly.
+
+You've got this. Let's build something meaningful. 🚀
+═══════════════════════════════════════════════════════════════════════════════
